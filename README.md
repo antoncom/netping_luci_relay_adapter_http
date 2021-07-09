@@ -25,11 +25,11 @@ OpenWrt LuCI HTTP adapter for NetPing Relay module
 
 ## How-To install (OpenWrt 19.7, LuCI)
 
-1. Download an IPK-file from [releases](https://github.com/Netping/netping_luci_relay/releases)
+1. Download an IPK-file from [releases]()
 2. Copy the ipk-file into the device file structure, e.g. to /tmp directory.
 3. Install using opkg:
 * opkg update
-* opkg install <path to ipk file> --force-reinstall
+* opkg install PATH-TO-IPK-FILE --force-reinstall
 
 NOTE:
 If you need to compile ipk-file for another architecture (or processor type), then use this instruction: [How to make a specific architecture based OpenWrt package as IPK file](https://netping.atlassian.net/wiki/spaces/PROJ/pages/3194945556/LuCI+.ipk)
@@ -38,9 +38,9 @@ If you need to compile ipk-file for another architecture (or processor type), th
 ## How-To create new adapter based on the present one
 
 1. Git clone the present repo
-2. Rename all files to "netping_luci_relay_adapter_<name>"
+2. Rename all files to "netping_luci_relay_adapter_ADAPTER-NAME"
 3. Edit "template" section in config file according to new adapter options.
 4. Edit model (lua) file accordingly
 5. Edit view (js/css) files accordingly
 
-[Screencast "Making a new adapter in 5 min."](https://youtu.be/IH48thITyRk)
+[Screencast "Making a new adapter in 5 min."]()
