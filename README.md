@@ -46,3 +46,7 @@ If you need to compile ipk-file for another architecture (or processor type), th
 4. Edit model (lua) file accordingly
 5. Edit view (js/css) files accordingly
 6. Compile and add validator declarations in .valid.js.htm using this specification: [https://netping.atlassian.net/wiki/spaces/PROJ/pages/2809857522](https://netping.atlassian.net/wiki/spaces/PROJ/pages/2809857522)
+
+## Screencast
+
+[Adapter installation from .ipk file](https://youtu.be/koNoIzhc9DE)
