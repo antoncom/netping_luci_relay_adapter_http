@@ -16,7 +16,10 @@ OpenWrt LuCI HTTP adapter for NetPing Relay module
 │       └── netping_luci_relay
 │           └── ui_adapter
 │               ├── netping_luci_relay_adapter_http.css.htm
-│               └── netping_luci_relay_adapter_http.js.htm
+│               ├── netping_luci_relay_adapter_http.js.htm
+│               └── netping_luci_relay_adapter_http.valid.js.htm
+├── Makefile
+├── README.md
 └── root
     └── etc
         └── config
@@ -42,5 +45,4 @@ If you need to compile ipk-file for another architecture (or processor type), th
 3. Edit "template" section in config file according to new adapter options.
 4. Edit model (lua) file accordingly
 5. Edit view (js/css) files accordingly
-
-[Screencast "Making a new adapter in 5 min."]()
+6. Compile and add validator declarations in .valid.js.htm using this specification: [https://netping.atlassian.net/wiki/spaces/PROJ/pages/2809857522](https://netping.atlassian.net/wiki/spaces/PROJ/pages/2809857522)

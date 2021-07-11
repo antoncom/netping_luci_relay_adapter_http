@@ -75,6 +75,10 @@ function http:getLabel()
 	return adapter_section:upper()
 end
 
+function http:getName()
+	return adapter_jsname
+end
+
 function http:render(optname, ...)
 	local value = http.loaded[optname]
 	local rendered = {
@@ -82,6 +86,11 @@ function http:render(optname, ...)
 		---------------------------------------------------------------------------------
 		cssfile = function()
 			local path = util.libpath() .. '/view/netping_luci_relay/ui_adapter/' .. adapter_jsname .. '.css.htm'
+			return fs.readfile(path)
+		end,
+
+		validator = function()
+			local path = util.libpath() .. '/view/netping_luci_relay/ui_adapter/' .. adapter_jsname .. '.valid.js.htm'
 			return fs.readfile(path)
 		end,
 
@@ -100,6 +109,10 @@ function http:render(optname, ...)
 
 		getvalues = function()
 			return  adapter_jsname .. ".getValue()"
+		end,
+
+		getfields = function()
+			return  adapter_jsname .. ".getFields()"
 		end,
 
 		-- All trivial options are rendered as is
