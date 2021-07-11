@@ -49,4 +49,4 @@ If you need to compile ipk-file for another architecture (or processor type), th
 
 ## Screencast Demo
 
-[Adapter installation from .ipk file](https://youtu.be/koNoIzhc9DE)
+[Adapter installation from .ipk file](https://www.youtube.com/watch?v=Qj2uZqPfCm4)
