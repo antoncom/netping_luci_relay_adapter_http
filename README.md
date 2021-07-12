@@ -28,7 +28,7 @@ OpenWrt LuCI HTTP adapter for NetPing Relay module
 
 ## How-To install (OpenWrt 19.7, x86, LuCI)
 
-1. Download an IPK-file from [releases]()
+1. Download an IPK-file from [releases](https://github.com/antoncom/netping_luci_relay_adapter_http/releases)
 2. Copy the ipk-file into the device file structure, e.g. to /tmp directory.
 3. Install using opkg:
 * opkg update
