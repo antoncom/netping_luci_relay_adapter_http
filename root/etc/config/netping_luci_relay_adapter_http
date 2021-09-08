@@ -5,3 +5,6 @@ config http 'template'
 	option login '0'
 	option password '0'
 	option hostport '0:0'
+	option period '0'
+	option timeout '0'
+
